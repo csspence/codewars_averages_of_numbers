@@ -12,6 +12,13 @@ If the array has 0 or 1 values or is null, your method should return an empty ar
 Have fun coding it and please don't forget to vote and rank this kata! :-)
 */
 
-function averages(numbers) {
-
+const averages = (numbers) => {
+  let array = [];
+  if(numbers) {
+    for(let i = 0; i < numbers.length - 1; i++) {
+      array.push((numbers[i] + numbers[i + 1]) / 2);
+    }  
+  }
+  
+  return array;
 }
