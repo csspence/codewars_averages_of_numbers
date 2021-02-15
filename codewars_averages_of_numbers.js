@@ -19,6 +19,5 @@ const averages = (numbers) => {
       array.push((numbers[i] + numbers[i + 1]) / 2);
     }  
   }
-  
   return array;
 }
